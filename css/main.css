@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.navbar{
+    background-color: rgb(52, 55, 61);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar img{
+    width: 50%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header{
+    height: 100vh;
+    background-color: rgb(5, 123, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.portfolio{
+    background-color: rgb(241, 241, 241);
+}
+
+.portfolio .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.portfolio-header{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.portfolio-header h2{
+    text-transform: uppercase;
+}
+
+.portfolio .portfolio-item{
+    width: 32%;
+    background-color: white;
+}
+
+.portfolio img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio-item {
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.portfolio-item .category{
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.portfolio-item .item-content{
+    background-color: rgba(255, 200, 0, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    opacity: 0;
+    cursor: pointer;
+}
+
+.item-content:hover{
+    opacity: 1;
+}
